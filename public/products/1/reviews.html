@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>title</title>
+    <title>Product 1</title>
     <link rel="stylesheet" href="/stylesheets/style.css" type="text/css">
 
     <script src="/javascripts/vendor/document-register-element.js"></script>
@@ -10,9 +10,23 @@
     <script src="/javascripts/vendor/includes-refresher.js" type="text/javascript"></script>
   </head>
   <body>
-    <h1>Simple Web Shop</h1>
+    <a href="/">Back</a>
+    <h1>Product 1</h1>
 
-    <a href="/products/1/">Product 1</a>
+    <form method="POST" action="/">
+      <button type="submit">Add to shopping cart</button>
+    </form>
+
+    <div class="tabs" id="product-info-tabs-container">
+      <ul class="tab-links">
+        <li><a href="index.html">Related</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="ratings.html">Ratings</a></li>
+      </ul>
+      <div>
+        Reviews
+      </div>
+    </div>
 
     <h-include src="/shopping-cart"></h-include>
 
