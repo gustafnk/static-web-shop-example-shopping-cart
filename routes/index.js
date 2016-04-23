@@ -13,7 +13,11 @@ router.get('/shopping-cart', function(req, res, next) {
 router.post('/', function(req, res, next) {
   shoppingCart.push({});
 
-  res.redirect(req.header('Referer') || '/');
+  if (req.xhr) {
+    res.send({ events: ['shopping-cart-item-added'] });
+  } else {
+    res.redirect(req.header('Referer') || '/');
+  }
 });
 
 module.exports = router;
