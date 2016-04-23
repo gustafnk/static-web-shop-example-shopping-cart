@@ -6,3 +6,19 @@ body {
 a {
   color: #00B7FF;
 }
+
+#product-variations-container, #product-info-tabs-container {
+  width: 300px;
+  background-color: #eee;
+  padding: 10px;
+}
+
+form button {
+  margin: 20px 0;
+}
+
+.shopping-cart {
+  position: absolute;
+  top: 20px;
+  left: 300px;
+}
