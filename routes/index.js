@@ -10,6 +10,10 @@ router.get('/shopping-cart', function(req, res, next) {
   res.render('shopping-cart', { shoppingCartLength: shoppingCart.length });
 });
 
+router.get('/shopping-cart-full', function(req, res, next) {
+  res.render('shopping-cart-full', { shoppingCartLength: shoppingCart.length });
+});
+
 router.post('/', function(req, res, next) {
   shoppingCart.push({});
 

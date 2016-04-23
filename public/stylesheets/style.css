@@ -22,3 +22,7 @@ form button {
   top: 20px;
   left: 300px;
 }
+
+h-include:not(.include_200) {
+  display: none;
+}
