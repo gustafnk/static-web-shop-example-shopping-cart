@@ -1,6 +1,8 @@
 
 $(function(){
 
+  $.pjax.defaults.scrollTo = false;
+
   // Application specific
   $(document).pjax('.tab-links a', '#product-info-tabs-container', {
     fragment: '#product-info-tabs-container'
