@@ -132,7 +132,7 @@ var hinclude;
 
   var proto = Object.create(window.HTMLElement.prototype);
 
-  proto.createdCallback = function () {
+  proto.attachedCallback = function () {
 
     if (this.getAttribute('skip-initial-include') !== null) {
       return;
